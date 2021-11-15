@@ -22,7 +22,7 @@ discROI_size_list = [560] #[400, 500, 600, 700, 800]
 DiscSeg_size = 640
 
 data_types = ['jpg', 'png']
-parent_dir = '/data/shaohua/MNet_DeepCDR'
+parent_dir = '/content/segtran/code/MNet_DeepCDR'
 
 DiscSeg_model = DiscModel.DeepModel(size_set=DiscSeg_size)
 DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_DiscSeg_ORIGA.h5'))
