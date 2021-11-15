@@ -22,7 +22,7 @@ discROI_size_list = [560] #[400, 500, 600, 700, 800]
 DiscSeg_size = 640
 
 data_types = ['jpg', 'png']
-parent_dir = '/data/shaohua/MNet_DeepCDR'
+parent_dir = '/content/segtran/code/MNet_DeepCDR'
 
 DiscSeg_model = DiscModel.DeepModel(size_set=DiscSeg_size)
 DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_DiscSeg_ORIGA.h5'))
@@ -39,7 +39,7 @@ external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      
                                   [ 'rim-one/image',      'rim-one/mask',       'rim_crop' ],
                                 ]
                                 
-refuge_data_dir     = '/data/shaohua/refuge2'
+refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images'
 external_data_dir   = '/data/shaohua/fundus-external'
 
 job = 'refuge'
