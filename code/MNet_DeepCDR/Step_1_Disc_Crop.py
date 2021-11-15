@@ -39,7 +39,7 @@ external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      
                                   [ 'rim-one/image',      'rim-one/mask',       'rim_crop' ],
                                 ]
                                 
-refuge_data_dir     = '/data/shaohua/refuge2'
+refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images'
 external_data_dir   = '/data/shaohua/fundus-external'
 
 job = 'refuge'
