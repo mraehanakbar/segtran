@@ -27,8 +27,8 @@ parent_dir = '/content/segtran/code/MNet_DeepCDR'
 DiscSeg_model = DiscModel.DeepModel(size_set=DiscSeg_size)
 DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_DiscSeg_ORIGA.h5'))
 
-refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     '/content/drive/MyDrive/fundus/train/images/Annotation-Training400/Disc_Cup_Masks/Glaucoma',      'train_crop' ],
-                                  [ 'Training400/Non-Glaucoma', '/content/drive/MyDrive/fundus/train/images/Annotation-Training400/Disc_Cup_Masks/Non-Glaucoma',  'train_crop' ],
+refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     'Annotation-Training400/Disc_Cup_Masks/Glaucoma',      'train_crop' ],
+                                  [ 'Training400/Non-Glaucoma', 'Annotation-Training400/Disc_Cup_Masks/Non-Glaucoma',  'train_crop' ],
                                   #[ 'Refuge2-Validation',        None,                                                 'valid2_crop' ],
                                   #[ 'REFUGE-Validation400',     'REFUGE-Validation400-GT/Disc_Cup_Masks',              'valid_crop' ],
                                   #[ 'Test400',                  'REFUGE-Test-GT/Disc_Cup_Masks',                       'test_crop' ]
