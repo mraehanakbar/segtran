@@ -13,5 +13,5 @@ numpy
 pillow
 scikit-image
 scipy
-tensorflow==2.0.0
+tensorflow==2.2.0
 pyyaml
