@@ -32,7 +32,7 @@ refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     'Annotation-Trai
                                   #[ 'Refuge2-Validation',        None,                                                 'valid2_crop' ],
                                   #[ 'REFUGE-Validation400',     'REFUGE-Validation400-GT/Disc_Cup_Masks',              'valid_crop' ],
                                   #[ 'Test400',                  'REFUGE-Test-GT/Disc_Cup_Masks',                       'test_crop' ]
-                                  [ 'test2', None, 'test2_crop' ]
+                                  #[ 'test2', None, 'test2_crop' ]
                                 ]
 
 external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      'drishiti_crop' ],
