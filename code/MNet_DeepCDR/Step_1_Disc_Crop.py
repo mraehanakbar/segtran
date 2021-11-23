@@ -18,7 +18,7 @@ from mnet_deep_cdr import Model_DiscSeg as DiscModel
 from mnet_deep_cdr.mnet_utils import BW_img, disc_crop, mk_dir, files_with_ext
 import pdb
 
-discROI_size_list = [560] #[400, 500, 600, 700, 800]
+discROI_size_list = [576] #[400, 500, 600, 700, 800]
 DiscSeg_size = 640
 
 data_types = ['jpg', 'png']
