@@ -40,9 +40,9 @@ external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      
                                 ]
                                 
 refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images'
-external_data_dir   = '/data/shaohua/fundus-external'
+external_data_dir   = '/content/drive/MyDrive/fundus/train/dristhi'
 
-job = 'refuge'
+job = 'external'
 if job == 'external':
     data_label_img_paths    = external_data_label_img_paths
     data_dir                = external_data_dir
