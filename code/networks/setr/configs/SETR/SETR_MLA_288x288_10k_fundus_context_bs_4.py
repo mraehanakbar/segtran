@@ -3,6 +3,7 @@ _base_ = [
     '../_base_/datasets/pascal_context.py', '../_base_/default_runtime.py',
     '../_base_/schedules/schedule_80k.py'
 ]
+norm_cfg = dict(type='BN', requires_grad=True)
 model = dict(
     backbone=dict(img_size=288, pos_embed_interp=True, drop_rate=0.,
                   mla_channels=256, mla_index=(5, 11, 17, 23)),
