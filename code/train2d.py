@@ -871,8 +871,8 @@ if __name__ == "__main__":
         from mmcv.utils import Config
         sys.path.append("networks/setr")
         from mmseg.models import build_segmentor
-        
-        task2config = { 'fundus': 'SETR_PUP_288x288_10k_fundus_context_bs_4.py', 
+        #'SETR_PUP_288x288_10k_fundus_context_bs_4.py',
+        task2config = { 'fundus': 'SETR_MLA_288x288_10k_fundus_context_bs_4.py', 
                         'polyp':  'SETR_PUP_320x320_10k_polyp_context_bs_4.py',
                         'profile': 'SETR_PUP_256x256_10k_profile_context_bs_4.py' }
         if args.do_profiling:
