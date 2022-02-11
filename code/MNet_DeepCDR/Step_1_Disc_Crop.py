@@ -43,7 +43,7 @@ refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images'
 external_data_dir   = '/content/drive/MyDrive/fundus'
 
 
-job = 'external'
+job = 'internal'
 if job == 'external':
     data_label_img_paths    = external_data_label_img_paths
     data_dir                = external_data_dir
