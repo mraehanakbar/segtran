@@ -553,7 +553,8 @@ def test_calculate_metric(iter_nums):
         from mmcv.utils import Config
         sys.path.append("networks/setr")
         from mmseg.models import build_segmentor
-        task2config = { 'fundus': 'SETR_PUP_288x288_10k_fundus_context_bs_4.py', 
+        # 'SETR_PUP_288x288_10k_fundus_context_bs_4.py'
+        task2config = { 'fundus': 'SETR_MLA_288x288_10k_fundus_context_bs_4.py', 
                         'polyp':  'SETR_PUP_320x320_10k_polyp_context_bs_4.py' }
         setr_cfg = Config.fromfile("networks/setr/configs/SETR/{}".format(task2config[args.task_name]))
         net = build_segmentor(setr_cfg.model, train_cfg=setr_cfg.train_cfg, test_cfg=setr_cfg.test_cfg)        
