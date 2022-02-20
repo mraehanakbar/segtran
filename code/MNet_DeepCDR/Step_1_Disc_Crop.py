@@ -29,8 +29,8 @@ DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_DiscSeg_OR
 
 refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     'Annotation-Training400/Disc_Cup_Masks/Glaucoma',      'train_crop' ],
                                   [ 'Training400/Non-Glaucoma', 'Annotation-Training400/Disc_Cup_Masks/Non-Glaucoma',  'train_crop' ],
-                                  [ 'Refuge2-Validation',        None,                                                 'valid2_crop' ],
-                                  [ 'REFUGE-Validation400',     'REFUGE-Validation400-GT/Disc_Cup_Masks',              'valid_crop' ],
+                                  #[ 'Refuge2-Validation',        None,                                                 'valid2_crop' ],
+                                  #[ 'REFUGE-Validation400',     'REFUGE-Validation400-GT/Disc_Cup_Masks',              'valid_crop' ],
                                   #[ 'Test400',                  'REFUGE-Test-GT/Disc_Cup_Masks',                       'test_crop' ]
                                   #[ 'test2', None, 'test2_crop' ]
                                 ]
@@ -39,10 +39,10 @@ external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      
                                   #[ 'rim-one/image',      'rim-one/mask',       'rim_crop' ]
                                 ]
 
-refuge_data_dir = '../input/dataset-ta/images' # kaggle                                
-#refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images' #colab
-external_data_dir = '../input/dataset-ta/drishti' # kaggle
-#external_data_dir   = '/content/drive/MyDrive/fundus' #colab
+#refuge_data_dir = '../input/dataset-ta/images' # kaggle                                
+refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images' #colab
+#external_data_dir = '../input/dataset-ta/drishti' # kaggle
+external_data_dir   = '/content/drive/MyDrive/fundus/drishti' #colab
 
 
 job = 'internal'
