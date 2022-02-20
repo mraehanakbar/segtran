@@ -35,7 +35,7 @@ refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     'Annotation-Trai
                                   #[ 'test2', None, 'test2_crop' ]
                                 ]
 
-external_data_label_img_paths = [ [ 'drishti/image',     'drishti/mask',      'drishti_crop' ],
+external_data_label_img_paths = [ [ 'drishti/image',     'drishti/mask',      'drishti/drishti_crop' ],
                                   #[ 'rim-one/image',      'rim-one/mask',       'rim_crop' ]
                                 ]
 
