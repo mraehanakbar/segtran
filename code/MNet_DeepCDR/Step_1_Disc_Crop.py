@@ -44,8 +44,9 @@ refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images' #colab
 #external_data_dir = '../input/dataset-ta/drishti' # kaggle
 external_data_dir   = '/content/drive/MyDrive/fundus/drishti' #colab
 
+choose = input("Masukkan Pilihan(internal/external): ")
 
-job = 'internal'
+job = choose
 if job == 'external':
     data_label_img_paths    = external_data_label_img_paths
     data_dir                = external_data_dir
