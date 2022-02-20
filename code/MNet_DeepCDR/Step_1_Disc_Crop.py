@@ -42,7 +42,7 @@ external_data_label_img_paths = [ [ 'drishiti/image',     'drishiti/mask',      
 #refuge_data_dir = '../input/dataset-ta/images' # kaggle                                
 refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images' #colab
 #external_data_dir = '../input/dataset-ta/drishti' # kaggle
-external_data_dir   = '/content/drive/MyDrive/fundus/drishti' #colab
+external_data_dir   = '/content/drive/MyDrive/fundus' #colab
 
 choose = input("Masukkan Pilihan(internal/external): ")
 
