@@ -8,7 +8,7 @@ model = dict(
     backbone=dict(img_size=288, pos_embed_interp=True, drop_rate=0.,
                   mla_channels=256, mla_index=(5, 11, 17, 23),norm_cfg=norm_cfg),
     decode_head=dict(img_size=288, mla_channels=256,
-                     mlahead_channels=128,,norm_cfg=norm_cfg ,num_classes=3),
+                     mlahead_channels=128,norm_cfg=norm_cfg ,num_classes=3),
     auxiliary_head=[
         dict(
             type='VIT_MLA_AUXIHead',
