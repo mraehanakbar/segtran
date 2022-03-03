@@ -56,7 +56,7 @@ else:
     auto_crop = True
 
 # Original size of external images are 800*800. Resize them to 640*640 before cropping.
-manual_resize = 950
+manual_resize = 1500
 
 for data_img_path, label_img_path, save_dir in data_label_img_paths:
     data_img_path  = path.abspath(path.join(data_dir, data_img_path))
