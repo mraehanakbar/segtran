@@ -25,7 +25,7 @@ data_types = ['jpg', 'png']
 parent_dir = '/content/segtran/code/MNet_DeepCDR'
 
 DiscSeg_model = DiscModel.DeepModel(size_set=DiscSeg_size)
-DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_DiscSeg_ORIGA.h5'))
+DiscSeg_model.load_weights(path.join(parent_dir, 'deep_model', 'Model_MNet_REFUGE.h5'))
 
 refuge_data_label_img_paths   = [ [ 'Training400/Glaucoma',     'Annotation-Training400/Disc_Cup_Masks/Glaucoma',      'train_crop' ],
                                   [ 'Training400/Non-Glaucoma', 'Annotation-Training400/Disc_Cup_Masks/Non-Glaucoma',  'train_crop' ],
