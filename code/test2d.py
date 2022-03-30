@@ -557,7 +557,7 @@ def test_calculate_metric(iter_nums):
         if decoder_type == "PUP":
           decoder_setr = 'SETR_PUP_288x288_10k_fundus_context_bs_4.py'
         elif decoder_type = "MLA":
-          decoder_setr == 'SETR_MLA_288x288_10k_fundus_context_bs_4.py'
+          decoder_setr = 'SETR_MLA_288x288_10k_fundus_context_bs_4.py'
         else:
           decoder_setr = 'SETR_NAIVE_288x288_10k_fundus_context_bs_4.py'
         # 'SETR_PUP_288x288_10k_fundus_context_bs_4.py'
