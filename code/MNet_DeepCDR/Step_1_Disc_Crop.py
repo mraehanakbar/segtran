@@ -40,8 +40,8 @@ external_data_label_img_paths = [ [ 'drishti/image',     'drishti/mask',      'd
                                 ]
 
                                 
-refuge_data_dir     = '/content/drive/MyDrive/fundus/train/images' #colab
-external_data_dir   = '/content/drive/MyDrive/fundus' #colab
+refuge_data_dir     = '/content/drive/MyDrive/fundus/train_simulation_2' #colab
+external_data_dir   = '/content/drive/MyDrive/fundus/train_simulation_2' #colab
 
 choose = input("Masukkan Pilihan(internal/external): ")
 
