@@ -6,9 +6,9 @@ _base_ = [
 norm_cfg = dict(type='BN', requires_grad=True)
 model = dict(
     backbone=dict(img_size=288, align_corners=False,
-                  pos_embed_interp=True, drop_rate=0., num_classes=3),
+                  pos_embed_interp=True, drop_rate=0., num_classes=3,norm_cfg=norm_cfg),
     decode_head=dict(img_size=288, align_corners=False, num_conv=2,
-                     upsampling_method='bilinear', num_classes=3, conv3x3_conv1x1=False),
+                     upsampling_method='bilinear', num_classes=3, conv3x3_conv1x1=False,norm_cfg=norm_cfg),
     auxiliary_head=[dict(
         type='VisionTransformerUpHead',
         in_channels=1024,
