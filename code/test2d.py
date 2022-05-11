@@ -728,7 +728,11 @@ def test_calculate_metric(iter_nums):
         dice_sum = 0
         for cls in range(1, args.num_classes):
             dice = allcls_avg_metric[cls-1]
-            print('class %d: dice = %.3f' %(cls, dice))
+            if cls == 0:
+              class_category = "Disc"
+            elif cls == 1:
+              class_category = "Cup"
+            print('class %s: dice = %.3f' %(class_category, dice))
             dice_sum += dice
             all_results[cls, iter_idx] = dice
         avg_dice = dice_sum / (args.num_classes - 1)
