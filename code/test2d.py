@@ -728,9 +728,9 @@ def test_calculate_metric(iter_nums):
         dice_sum = 0
         for cls in range(1, args.num_classes):
             dice = allcls_avg_metric[cls-1]
-            if cls == 0:
+            if cls == 1:
               class_category = "Disc"
-            elif cls == 1:
+            elif cls == 2:
               class_category = "Cup"
             print('class %s: dice = %.3f' %(class_category, dice))
             dice_sum += dice
