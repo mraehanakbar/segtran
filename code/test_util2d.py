@@ -70,7 +70,7 @@ def test_all_cases(net, dataloader, task_name, num_classes, mask_thres, model_ty
         batch_metric = calc_batch_metric(preds_soft, orig_mask_batch, num_classes, mask_thres, do_calc_vcdr_error=do_calc_vcdr_error)
 
         if verbose:
-            print("%s... (%d images):\n%s" %(get_filename([x for x in image_paths]), len(image_batch), batch_metric))
+            print("%s... (%d images):\n%s" %( get_filename(x) for x in image_paths , len(image_batch), batch_metric))
             
         allcls_metric_sum   += batch_metric.sum(axis=0)
         allcls_metric_count += len(batch_metric)
